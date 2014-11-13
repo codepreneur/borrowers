@@ -5,9 +5,9 @@
 <ul>
 	{{#each}}
 		<li>
-			{{#link-to 'friends.show' this}}
+			{{link-to fullName 'friends.show' this}}
 				{{firstName}} {{lastName}}
-			{{/link-to}}	
+				
 		</li>
 	{{/each}}
 </ul>
