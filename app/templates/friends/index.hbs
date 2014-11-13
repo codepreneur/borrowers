@@ -4,6 +4,10 @@
 
 <ul>
 	{{#each}}
-		<li>{{firstName}} {{lastName}}</li>
+		<li>
+			{{#link-to 'friends.show' this}}
+				{{firstName}} {{lastName}}
+			{{/link-to}}	
+		</li>
 	{{/each}}
 </ul>
