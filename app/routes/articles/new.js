@@ -9,7 +9,7 @@ export default Ember.Route.extend({
 	actions: {
 		save: function(){
 			var _this = this;
-			model = this.modelFor('articles/new');
+			var model = this.modelFor('articles/new');
 
 			model.save().then(function(){
 				_this.transitionTo('articles');
