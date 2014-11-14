@@ -22,7 +22,9 @@ export default Ember.ObjectController.extend({
 					_this.transitionToRoute('friends.show', friend);
 				});
 			} else {
-				this.set('errorMessage', 'You have to fill all the fields')
+				this.set('errorMessage', 'You have to fill all the fields');
+
+				return false;
 			}
 		},
 		cancel: function(){
