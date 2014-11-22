@@ -34,13 +34,13 @@ app.import('bower_components/moment/moment.js');
 // 	}
 // });
 
-app.import('bower_components/borrowers-dates/index.js', { 
-	exports: {
-		'borrowers-dates': [
-		'format'
-		] 
-	}
-});
+// app.import('bower_components/borrowers-dates/index.js', { 
+// 	exports: {
+// 		'borrowers-dates': [
+// 		'format'
+// 		] 
+// 	}
+// });
 
 
 // Use `app.import` to add additional libraries to the generated
