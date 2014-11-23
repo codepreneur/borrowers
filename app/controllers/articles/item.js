@@ -12,4 +12,15 @@ export default Ember.ObjectController.extend({
 			Ember.run.once(this, this.autoSave);
 		}
 	}.on('init').observes('isDirty')
-});
+
+	// setObserver: function() {
+	// 	this.addObserver('isDirty', this, this.isDirtyChanged);
+	// }.on('init'), 
+	// isDirtyChanged: function() {
+	// 	if (this.get('isDirty') && !this.get('isSaving')) { 
+	// 		Ember.run.once(this, this.autoSave);
+	// 	} 
+	// }
+
+
+	});
